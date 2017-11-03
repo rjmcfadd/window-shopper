@@ -34,7 +34,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mpV-RB-6Fr" customClass="CurrencyTxtField" customModule="window_shopper" customModuleProvider="target">
                                 <rect key="frame" x="20" y="239" width="335" height="40"/>
@@ -45,27 +45,66 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xmb-IY-AXm">
+                                <rect key="frame" x="20" y="324" width="335" height="70.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="59"/>
+                                <color key="textColor" red="0.98809523809523814" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6k4-o5-U14">
+                                <rect key="frame" x="134.66666666666666" y="399.66666666666669" width="106" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="JZy-B4-PkJ"/>
+                                    <constraint firstAttribute="height" constant="28" id="SCG-2w-FuI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.9880952381" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifW-hK-eBB">
+                                <rect key="frame" x="20" y="728" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2TL-eo-lto"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Clear Calculator">
+                                    <color key="titleColor" red="0.9880952381" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearCalculatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PQr-5s-hQG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="ifW-hK-eBB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="A7w-eT-ahO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ifW-hK-eBB" secondAttribute="bottom" constant="20" id="CFl-DA-VF7"/>
                             <constraint firstItem="7gX-28-PNt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DLN-6H-H58"/>
                             <constraint firstItem="mpV-RB-6Fr" firstAttribute="trailing" secondItem="KWc-2N-2zY" secondAttribute="trailing" id="G3U-7G-MMr"/>
                             <constraint firstItem="7gX-28-PNt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="HJX-hN-dd5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ifW-hK-eBB" secondAttribute="trailing" constant="20" id="Hal-Xb-ecl"/>
                             <constraint firstItem="7gX-28-PNt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="JBt-46-mfE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KWc-2N-2zY" secondAttribute="trailing" constant="20" id="KlA-zX-gh5"/>
+                            <constraint firstItem="6k4-o5-U14" firstAttribute="top" secondItem="Xmb-IY-AXm" secondAttribute="bottom" constant="5" id="KyV-HW-FxF"/>
                             <constraint firstItem="snU-Cv-KHX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="L5P-2d-898"/>
+                            <constraint firstItem="Xmb-IY-AXm" firstAttribute="top" secondItem="mpV-RB-6Fr" secondAttribute="bottom" constant="45" id="NnF-5w-73A"/>
                             <constraint firstItem="mpV-RB-6Fr" firstAttribute="top" secondItem="KWc-2N-2zY" secondAttribute="bottom" constant="25" id="Qeo-cT-FiR"/>
+                            <constraint firstItem="6k4-o5-U14" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bTa-Ra-Tf2"/>
                             <constraint firstItem="7gX-28-PNt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="c3p-Zg-3Bw"/>
+                            <constraint firstItem="Xmb-IY-AXm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eBR-ra-YiP"/>
                             <constraint firstItem="mpV-RB-6Fr" firstAttribute="height" secondItem="KWc-2N-2zY" secondAttribute="height" id="f4m-qh-sWR"/>
                             <constraint firstItem="mpV-RB-6Fr" firstAttribute="leading" secondItem="KWc-2N-2zY" secondAttribute="leading" id="hpT-RQ-sgQ"/>
                             <constraint firstItem="KWc-2N-2zY" firstAttribute="top" secondItem="snU-Cv-KHX" secondAttribute="bottom" constant="35" id="jyu-Xf-WPO"/>
                             <constraint firstItem="KWc-2N-2zY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kqm-Ij-hdb"/>
+                            <constraint firstItem="Xmb-IY-AXm" firstAttribute="width" secondItem="mpV-RB-6Fr" secondAttribute="width" id="p1a-GW-jKb"/>
                             <constraint firstItem="snU-Cv-KHX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uFG-nQ-osw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="hoursLbl" destination="6k4-o5-U14" id="hiJ-Tu-Lh6"/>
                         <outlet property="priceTxt" destination="mpV-RB-6Fr" id="lcs-nf-asO"/>
+                        <outlet property="resultLbl" destination="Xmb-IY-AXm" id="LyT-Lx-6Ex"/>
                         <outlet property="wageTxt" destination="KWc-2N-2zY" id="BCo-fw-htn"/>
                     </connections>
                 </viewController>
