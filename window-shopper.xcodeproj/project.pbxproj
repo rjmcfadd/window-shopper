@@ -16,6 +16,7 @@
 		9444E4C71FACE94B004F539E /* window_shopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9444E4C61FACE94B004F539E /* window_shopperTests.swift */; };
 		9444E4D01FACE970004F539E /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9444E4CF1FACE970004F539E /* Wage.swift */; };
 		9444E4D11FACEAC4004F539E /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9444E4CF1FACE970004F539E /* Wage.swift */; };
+		9444E4D21FACF90A004F539E /* CurrencyTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9444E4BE1FACCD8E004F539E /* CurrencyTxtField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -241,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9444E4D21FACF90A004F539E /* CurrencyTxtField.swift in Sources */,
 				9444E4C71FACE94B004F539E /* window_shopperTests.swift in Sources */,
 				9444E4D11FACEAC4004F539E /* Wage.swift in Sources */,
 			);
